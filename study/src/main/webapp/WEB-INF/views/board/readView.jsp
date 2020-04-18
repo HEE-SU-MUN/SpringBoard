@@ -72,7 +72,7 @@
 	 	</table>
 	 	<a href="table" class="btn btn-primary">목록</a>
 	    <a href="/board/updateView?bno=${read.bno}" class="btn btn-primary pull-right">수정</a>
-		<button type="submit" class="delete_btn">삭제</button>
+		<a href="/board/delete?bno=${read.bno}" class="btn btn-primary">삭제</a>
 	 	
 	 	
 	 </div>

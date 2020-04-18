@@ -30,7 +30,7 @@
 	 <div class="row">
 	 
 	 <form method="post" action="/board/update">
-	 <input type="hidden" name="bno" value="${update.bno}" readonly="readonly"/>
+	 <input type="hidden" name="bno" value="${JUN.bno}" readonly="readonly"/>
 	 	<table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
 	 		<thead>
 	 			<tr>
@@ -41,13 +41,13 @@
 	 		</thead><tbody>
 	 		
 	 			<tr>
-	 			<td><input type="text" class="form-control" placeholder="글 제목" name="title" maxlength="50" value="${update.title}"></td>
+	 			<td><input type="text" class="form-control" placeholder="글 제목" name="title" maxlength="50" value="${JUN.title}"></td>
 	 			</tr>
 	 			<tr>
-	 			<td><textarea class="form-control" placeholder="글 내용" name="content" maxlength="2048" style="height: 350px;">${update.content}</textarea></td>
+	 			<td><textarea class="form-control" placeholder="글 내용" name="content" maxlength="2048" style="height: 350px;">${JUN.content}</textarea></td>
 	 			</tr>
 	 			<tr>
-	 			<td><input type="text" class="form-control" placeholder="작성자" name="writer" maxlength="50" value="${update.writer}"></td>
+	 			<td><input type="text" class="form-control" placeholder="작성자" name="writer" maxlength="50" value="${JUN.writer}"></td>
 	 			</tr>
 	 			
 	 		</tbody>

@@ -1,17 +1,20 @@
 package kr.co.vo;
 import java.util.Date;
 
+import lombok.Data;
+
 public class BoardVo {
 
-		private int bno;
+		private long bno;
 		private String title;
 		private String content;
 		private String writer;
 		private Date regdate;
-		public int getBno() {
+		private Date updateDate;
+		public long getBno() {
 			return bno;
 		}
-		public void setBno(int bno) {
+		public void setBno(long bno) {
 			this.bno = bno;
 		}
 		public String getTitle() {
@@ -38,6 +41,11 @@ public class BoardVo {
 		public void setRegdate(Date regdate) {
 			this.regdate = regdate;
 		}
-	
-
+		public Date getUpdateDate() {
+			return updateDate;
+		}
+		public void setUpdateDate(Date updateDate) {
+			this.updateDate = updateDate;
+		}
 }
+		
